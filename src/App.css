@@ -1,0 +1,169 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+.navbar {
+  background-color: #3498db;
+  color: white;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.navbar .links a {
+  color: white;
+  margin-right: 15px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: normal;
+  transition: color 0.3s ease;
+}
+
+.navbar .links a:hover {
+  color: #ff4d4d;
+}
+body, .home-page, .add-product-page {
+  padding: 0;
+  margin: 0;
+  background-image: url('https://coolbackgrounds.io/images/backgrounds/index/aqua-d9b59c89.png');
+  background-size: cover; /* Ensures the image covers the entire area */
+  background-repeat: no-repeat; /* Prevents tiling of the image */
+  background-attachment: fixed; /* Keeps the background fixed during scrolling */
+  height: 100vh; /* Makes it fill the full height of the viewport */
+  width: 100%; /* Makes it fill the full width of the viewport */
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.product-card {
+  background: white;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px; /* Slightly rounded corners */
+  width: 250px; /* Adjust width to match screenshot */
+  height: auto; /* Allow for dynamic height based on content */
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional for a subtle shadow */
+  font-family: 'Arial', sans-serif; /* Match the font style */
+}
+
+.product-card h2 {
+  font-size: 1.2rem; /* Adjust the title font size */
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+.product-card p {
+  font-size: 1rem; /* Adjust the text font size */
+  color: #555; /* Softer gray for text */
+  margin: 0.5rem 0;
+}
+
+.product-card .price {
+  font-size: 1.2rem; /* Emphasize the price */
+  font-weight: bold;
+  color: green; /* Match the green color */
+  margin-top: 0.5rem;
+}
+
+.product-card img {
+  max-width: 100%;
+}
+
+.add-product-page {
+  display: flex;
+  flex-direction: column; /* Stacks heading and form vertically */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.add-product-page h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.add-product-page form {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 500px;
+}
+
+.add-product-page form label {
+  display: block;
+  font-weight: bold;
+  margin: 0.5rem 0 0.2rem 0;
+}
+
+.add-product-page form input {
+  display: block;
+  margin: 0.5rem 0 1rem 0;
+  padding: 0.7rem;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.add-product-page form input::placeholder {
+  color: #888;
+}
+
+.add-product-page form input:focus {
+  border-color: #ff4d4d;
+  outline: none;
+}
+
+.add-product-page form button {
+  background: linear-gradient(to right, #ff4d4d, #ff0000);
+  color: white;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+}
+
+.add-product-page form button:hover {
+  background: linear-gradient(to right, #ff0000, #ff4d4d);
+}
+
+.add-product-page form button:active {
+  transform: scale(0.98);
+}
+
+@media screen and (max-width: 768px) {
+  .add-product-page form {
+    padding: 1.5rem;
+    width: 90%;
+  }
+
+  .add-product-page h2 {
+    font-size: 1.5rem;
+  }
+
+  .add-product-page form input {
+    padding: 0.6rem;
+  }
+
+  .add-product-page form button {
+    font-size: 1.1rem;
+  }
+}
